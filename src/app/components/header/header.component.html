@@ -5,7 +5,7 @@
             </i>
             <strong style="font-size: 30px">FlipKart</strong>
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="search products">
+                <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="search products">
             </div>
             <span class="fa fa-search search-icon"></span>
 
